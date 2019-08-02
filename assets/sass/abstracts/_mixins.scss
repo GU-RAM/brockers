@@ -1,0 +1,29 @@
+// web fonts
+@mixin font-face($font-family, $file) {
+@font-face {
+	font-family: 'font-family';
+	src: url('#{$path-font}/#{$file}.eot');
+	src: url('#{$path-font}/#{$file}.ttf') format('truetype'),
+	     url('#{$path-font}/#{$file}.woff') format('woff'),
+	     url('#{$path-font}/#{$file}.woff2') format('woff2')
+}
+}
+
+// vertical centering
+@mixin vertical-center() {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+
+@mixin lines($bg-color: $color-footer-line, $width: 3rem, $height: 2px, $brdr-rad: null) {
+    & div {
+        background-color: $bg-color;
+        width: $width;
+        height: $height;
+        margin: 1.4rem 0;
+        border-radius: $brdr-rad;
+    }
+}

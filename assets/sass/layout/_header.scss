@@ -1,0 +1,63 @@
+/* ------ header -------- */
+.header {
+    padding: 20px 0;
+    margin-bottom: 7rem;
+
+    &__navigation {
+        & li {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 14px;
+            
+            &:hover {
+                border-bottom: 2px solid $color-line;
+            }
+        }
+    }
+
+    & .container-fluid {
+        height: 37rem;
+        background: url('../images/bg-header.png') no-repeat center/cover,
+                    $bg-dark;
+        color: $color-secondary;
+    }
+
+    & .height-reg {
+        height: 100%;
+    }
+
+    .vert-cent {
+        @include vertical-center();
+    }
+
+    &__h1 {   
+
+        @include lines($height: 6px,
+            $width: 8rem,
+            $bg-color: $color-line,
+            $brdr-rad: 0.8rem); 
+
+        & span {
+            display: block;
+            font-size: 2.2rem;
+
+            &:first-child {
+                font-size: 4.8rem;
+                font-weight: bold;
+            }
+        }
+    }           
+
+    &__contact {
+        display: inline-block;
+        padding: 1.5rem 2.5rem;
+        margin-top: 2.5rem;
+        border-radius: 10px;
+        color: $color-secondary;
+        background-color: #0a3769;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-width: 0;
+    }
+}

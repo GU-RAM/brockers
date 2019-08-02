@@ -1,0 +1,29 @@
+/*---- key features ----*/
+.key-features {
+    margin: 9rem 0;
+    margin-bottom: 5rem;
+    @include lines($height: 6px,
+        $width: 8rem,
+        $bg-color: $color-line,
+        $brdr-rad: 0.8rem);
+
+    & h1 {
+        color: $color-dark-blue; 
+    }
+
+    &--col-my {
+        margin: 3rem 0;
+
+        & .text-on-imgl {
+            position: absolute;
+            right: 5rem;
+            bottom: 7rem;
+            text-align: right;
+        }
+        & .text-on-imgr {
+            position: absolute;
+            left: 7rem;
+            bottom: 8rem;
+        }
+    }
+}
