@@ -140,7 +140,8 @@ a:hover {
       background-color: #fff;
       cursor: pointer; }
     .explore-more--heights:hover > .explore-more__img {
-      background-image: url("../images/bg-header.png");
+      display: block;
+      background: url("../images/bg-header.png") no-repeat center/cover;
       height: 11rem; }
   .explore-more p {
     margin-bottom: 0;

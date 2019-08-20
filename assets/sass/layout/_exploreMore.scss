@@ -10,7 +10,7 @@
     }
 
     &__h2 {
-        font-size: 2.4rem;
+        font-size: 2.4rem; 
         font-weight: bold;
         border-top: 3px solid $color-line;
         padding: 1.2rem 10px;
@@ -24,13 +24,14 @@
         &:hover {
 
             & > .wrapper {
-            display: block;
-            background-color: $color-secondary;
-            cursor: pointer;
+                display: block;
+                background-color: $color-secondary;
+                cursor: pointer;
             }
 
             & > .explore-more__img {
-                background-image: url('../images/bg-header.png');
+                display: block;
+                background: url('../images/bg-header.png') no-repeat center/cover;
                 height: 11rem;
             }
         }
