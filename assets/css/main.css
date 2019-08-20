@@ -85,6 +85,8 @@ a:hover {
     font-size: 1.4rem;
     font-weight: bold;
     border-width: 0; }
+    .header__contact:hover {
+      background-color: #47596d; }
 
 /* ------- terminal -------- */
 .terminal {
