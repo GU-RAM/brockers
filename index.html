@@ -12,11 +12,12 @@
 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
 
-	<!-- fontawasame -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- fontawasame -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
 	<!-- Main Css -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/all.min.js"></script>
     
     <title>Document</title>
 
@@ -25,10 +26,11 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-2 mr-auto text-center mb-4">
+                <div class=" d-flex align-items-center col-12 col-lg-2 mr-auto text-center mb-4">
                     <img src="assets/images/logo.png" alt="logo">
+                    <button class="header__button ml-auto bg-light text-center d-lg-none"><i class="fas fa-bars"></i></button>
                 </div>
-                <div class="col-lg-9 col-12 text-center text-lg-right">
+                <div class="nav-div col-12 col-lg-10 text-center text-lg-right">
                     <ul class="header__navigation">
                         <li><a href="pages/">About Us</a></li>
 						<li><a href="pages/">CryptX System</a></li>
@@ -92,15 +94,17 @@
                    <div class="mx-auto"></div>
                 </div>
                 <div class="col-md-6 key-features--col-my">
-                    <img src="assets/images/key-features-1.png" alt="">
+                    <img  src="assets/images/key-features-1.png" alt="">
                     <div class="text-on-imgl">Connected to <br>multiple exchanges</div>
                 </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="col-md-6 d-flex flex-column justify-content-center rel">
+                    <div class='hover-text'></div>
                     <p>We are connected to 10+ of the most accepted exchanges including Bitstamp, Binance, Kraken and 
                        others allowing users to easily exchange crypto assets with minimal slippage.</p>
                 </div>
 
-                <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center">
+                <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center rel">
+                    <div class= 'hover-text left' ></div>
                      <p>Using Brokers.IO Terminal, we utilize algorithmic trading, custom trading bots and deep analytics to ensure you
                        have the smartest platform available for your trading needs</p>
                 </div>
@@ -114,12 +118,14 @@
                     <div class="text-on-imgl">BUILT-IN <br>BOTS SUPPORT</div>
                 </div>
                 <div class="col-md-6 order-4 d-flex flex-column justify-content-center">
+                    <div class= 'hover-text' ></div>
                     <p>At Brokers.IO Terminal, we have built intelligent bots that can trade automatically based on a set of 
                        rules we know work. We also develop custom trading bots for our clients based on their requirements and 
                        trading knowledge.</p>
                 </div>
     
                 <div class="col-md-6 order-6 order-md-5 d-flex flex-column justify-content-center">
+                    <div class= 'hover-text left'></div>
                     <p>Brokers.Io Terminal comes with the access to private market reports and analytics and automatically 
                        creates client portfolio and KPI analysis.</p>
                 </div>
@@ -158,7 +164,7 @@
                             <h2 class="explore-more__h2">Career </h2>
                             <p>Browse current opnenings and join the group of brightest people in industry</p>
                         </a>       
-                        <div class="explore-more__img"></div>           
+                        <div class="explore-more__img"></div>        
                     </div>
                 </div>
             </div>
@@ -190,7 +196,7 @@
                     </ul>
                 </div>
 
-                <div class="d-none d-md-block col-md-12 text-center col-lg-2">
+                <div class="d-none d-md-block col-md-12 text-center col-lg-2 text-primary">
                     <img src="assets/images/mini-logo.png" alt="">
                 </div>
 
@@ -215,11 +221,11 @@
 			 	<div class="col-12 col-sm-5 col-lg-6 mr-auto order-7 mt-3">
                     <span class="d-block">Phone:  +1-541-754-3010</span>
                     <span class="d-block">Email:  trade@brokers.io</span>
-                </div>
+                 </div>
                    
                 <!-- copyright -->
-                <div class="col-12 col-sm-7 col-lg-6 text-sm-right order-8 mt-3 mb-5">
-                    <span class="copyright text-light">&copy; 2019, Brokers.io  </span> <span class="text-light"> All Rights Reserved</span>
+                <div class="col-12 col-sm-7 col-lg-6 text-sm-right order-8 mt-3 mb-5 ">
+                    <span class="copyright text-light" >&copy; 2019, Brokers.io  </span> <span class="text-light"> All Rights Reserved</span>
                     <span class="d-block mt-4 omedia">Website By Omedia</span>
                 </div>
             </div>
@@ -229,6 +235,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </div>
 

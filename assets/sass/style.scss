@@ -10,36 +10,5 @@
         'layout/exploreMore',
         'layout/footer';
 
-@media only screen and (min-width: 390px) and (max-width: 776px) {
-    .key-features--col-my .text-on-imgl,
-    .key-features--col-my .text-on-imgr  {
-        bottom:  75px;
-        right: 55px;
-    }
-}   
-
-@media only screen and (max-width: 576px) {
-    html {
-        font-size: 40%;
-    }
-} 
-
-@media only screen and (min-width: 576px) {
-    html {
-        font-size: 45%;
-    }
-}   
-
-
-@media only screen and (min-width: 996px) {
-    html {
-        font-size: 55%;
-    }
-}   
-
-@media only screen and (min-width: 1200px) {
-    html {
-        font-size: 62.5%;
-    }
-}   
+@import 'components/media';
 

@@ -13,17 +13,60 @@
 
     &--col-my {
         margin: 3rem 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
 
         & .text-on-imgl {
             position: absolute;
-            right: 5rem;
-            bottom: 7rem;
+            // right: 5rem;
+            // bottom: 7rem;
+            right: 15%;
+            bottom: 40%;
             text-align: right;
+            color: $color-secondary;
         }
         & .text-on-imgr {
             position: absolute;
-            left: 7rem;
-            bottom: 8rem;
+            // left: 7rem;
+            // bottom: 8rem;
+            left: 14%;
+            bottom: 40%;
+            color: $color-secondary;
         }
     }
 }
+
+.rel {
+    position: relative;
+}
+
+.hover-text {
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    @include mq('medium') {
+        height: calc(100% - 6rem);
+        bottom: 3rem;
+    }
+}
+
+.left {
+    left: 100%;
+}
+
+.img-hov {
+    width: 100%;
+}
+
+.img-hov-left {
+    width: 100%;
+    left: 0;
+}
+

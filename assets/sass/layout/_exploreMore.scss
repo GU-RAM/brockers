@@ -23,15 +23,15 @@
 
         &:hover {
 
-            & > .wrapper {
+            & .wrapper {
                 display: block;
                 background-color: $color-secondary;
                 cursor: pointer;
             }
 
-            & > .explore-more__img {
+            & .explore-more__img {
                 display: block;
-                background: url('../images/bg-header.png') no-repeat center/cover;
+                background: url('../images/explore-more-img.png') no-repeat center/cover;
                 height: 11rem;
             }
         }
