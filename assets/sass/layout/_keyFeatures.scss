@@ -19,8 +19,6 @@
 
         & .text-on-imgl {
             position: absolute;
-            // right: 5rem;
-            // bottom: 7rem;
             right: 15%;
             bottom: 40%;
             text-align: right;
@@ -28,8 +26,6 @@
         }
         & .text-on-imgr {
             position: absolute;
-            // left: 7rem;
-            // bottom: 8rem;
             left: 14%;
             bottom: 40%;
             color: $color-secondary;
@@ -46,7 +42,7 @@
     right: 0; 
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(30,30,30,.2);
     overflow: hidden;
     width: 0;
     height: 100%;

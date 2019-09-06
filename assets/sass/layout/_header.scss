@@ -26,13 +26,29 @@
             @include mq('medium') {
                 display: inline-block;
             }
-            
-            &:hover {
-                border-bottom: 2px solid $color-line;
 
-                & a {
-                    display: block;
-                }
+            & a {
+                position: relative;
+            }
+
+            & a::before {
+                content: ' ';
+                position: absolute;
+                bottom: -10%;
+                left: 50%;
+                width: 0;
+                border-bottom: 2px solid $color-line;
+                transition: .4s ease-out; 
+            }
+
+            & a:hover::before {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            & a {
+                display: block;
             }
         }
     }

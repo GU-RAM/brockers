@@ -1,3 +1,4 @@
+// make transitional transparent color on text, while hover on img
 let img = document.querySelectorAll('.key-features--col-my');
 let  imgHover = document.querySelectorAll('.hover-text');
 
@@ -16,6 +17,7 @@ for (let i = 0; i < img.length; i++) {
     })
 }
 
+// show links, when clicking on menu button
 let showNav = document.querySelector('.nav-div').style;
 
 document.querySelector('.header__button').addEventListener('click', () => {

@@ -74,10 +74,22 @@ a:hover {
     @media only screen and (min-width: 768px) {
       .header__navigation li {
         display: inline-block; } }
-    .header__navigation li:hover {
-      border-bottom: 2px solid #0ecafc; }
-      .header__navigation li:hover a {
-        display: block; }
+    .header__navigation li a {
+      position: relative; }
+    .header__navigation li a::before {
+      content: ' ';
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      width: 0;
+      border-bottom: 2px solid #0ecafc;
+      transition: .4s ease-out; }
+    .header__navigation li a:hover::before {
+      width: 100%;
+      left: 0;
+      right: 0; }
+    .header__navigation li a {
+      display: block; }
   .header .container-fluid {
     height: 37rem;
     background: url("../images/bg-header.png") no-repeat center/cover, #000;
@@ -163,7 +175,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.2);
   overflow: hidden;
   width: 0;
   height: 100%;
